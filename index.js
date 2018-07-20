@@ -19,6 +19,10 @@ class EmojiMaker {
           left,
           top,
         },
+        windowSize: {
+          width: 200,
+          height: 400,
+        },
       });
 
       webshotStream.on('data', chunk => chunks.push(chunk));
