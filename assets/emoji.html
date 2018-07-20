@@ -1,0 +1,39 @@
+<html>
+<head>
+	<style>
+	.emoji {
+		background-image: url('./emojired.png');
+		background-repeat: no-repeat;
+		background-position: center top;
+		height: 160px;
+		width: 160px;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	     justify-content: center;
+	     align-items: center;
+		margin: 20px;
+	}
+	.emoji.blue{
+		background-image: url('./emoji.png');
+	}
+	.emoji>.text {
+		font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+		font-weight: 500;
+		font-size: 45;
+		letter-spacing: .05rem;
+		text-align: center;
+	     background-color: #565656;
+	     color: transparent;
+ 	     text-shadow: 0px 1px 0.5px rgba(255,255,255, 1);
+	     -webkit-background-clip: text;
+	     -moz-background-clip: text;
+	     background-clip: text;
+	}
+	</style>
+</head>
+<body>
+	<div class="emoji"><div class="text">EMOJI</div></div>
+	<div class="emoji blue"><div class="text">EMOJI</div></div>
+</body>
+</html>
