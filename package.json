@@ -3,5 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "author": "andydam (andy@andydam.com",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "webshot": "^0.18.0"
+  }
 }
