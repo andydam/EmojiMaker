@@ -1,8 +1,5 @@
 const fs = require('fs');
-const { promisify } = require('util');
 const webshot = require('webshot');
-
-fs.readFilePromise = promisify(fs.readFile);
 
 class EmojiMaker {
   static snap(html, left, top) {
@@ -37,7 +34,7 @@ class EmojiMaker {
 
   async createEmoji(text) {
     if (!this.html) return;
-    const fixedText = text.replace(/\n/, '<br />');
+    const fixedText = text.replace(/\n/g, '<br />');
     const html = this.html.replace(/(%EMOJI%)/g, fixedText);
 
     const [red, blue] = await Promise.all([
